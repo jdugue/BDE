@@ -1,0 +1,50 @@
+/*------------------------------------------------*/
+/*	presentation
+/*------------------------------------------------*/
+
+.presentation {
+	background-color: $presentation-bg-color;	
+}
+
+.interest {
+	margin: 30px 0;
+
+	.sub-heading {
+		margin-bottom: 15px;
+
+		.glyphicon {
+			margin-right: 5px;
+		}
+	}
+
+}
+
+ul.social-icons {
+	
+	@media (min-width: 768px) {
+		position: relative;
+		top: -3px;
+		left: 6px;
+	
+	}
+	
+	li {
+		padding: 10px;
+
+		a {
+
+			&:hover {				
+				text-decoration: none;
+			}
+		}	
+	}
+
+	.icon {
+		font-size: 22px;
+
+		&:hover {
+			color: darken($base-icon-color, 20%);
+		}
+	}
+
+}
