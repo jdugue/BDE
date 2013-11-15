@@ -3,10 +3,10 @@
 /*------------------------------------------------*/
 
 
-@import "compass/typography";
-@import "compass/css3";
+/*@import "compass/typography";*/
+/*@import "compass/css3";*/
 
-@include font-face($secondary-font-family-bold, font-files(	
+/*@include font-face($secondary-font-family-bold, font-files(	
 	"josefinslab-bold-webfont.svg",
 	"josefinslab-bold-webfont.ttf",
 	"josefinslab-bold-webfont.woff"
@@ -17,7 +17,7 @@
 	"josefinslab-light-webfont.ttf",
 	"josefinslab-light-webfont.woff"
 	), "josefinslab-light-webfont.eot");
-
+*/
 
 /* general styles */
 body {
@@ -35,6 +35,14 @@ a {
 		text-decoration: none;
 	}
 
+}
+
+p {
+	text-align: justify;
+}
+
+h1 {
+	text-align: center;	
 }
 
 .glyphicon,
@@ -117,10 +125,10 @@ a {
 	-webkit-animation: animate-stripes 2s linear infinite;
 }
 
-.popover {
+/*.popover {
 	@include single-box-shadow(rgba(0, 0, 0, 0.1), 0, 2px, 4px, 0 );
 }
-
+*/
 .light-icon {
 	color: $base-font-color-light;
 }

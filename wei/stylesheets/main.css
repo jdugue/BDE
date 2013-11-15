@@ -7228,6 +7228,99 @@ a .icon-flip-vertical:before {
       left: auto; }
 
 /*------------------------------------------------*/
+/*	Base
+/*------------------------------------------------*/
+/*@import "compass/typography";*/
+/*@import "compass/css3";*/
+/*@include font-face($secondary-font-family-bold, font-files(	
+	"josefinslab-bold-webfont.svg",
+	"josefinslab-bold-webfont.ttf",
+	"josefinslab-bold-webfont.woff"
+	), "josefinslab-bold-webfont.eot");
+
+@include font-face($secondary-font-family-light, font-files(
+	"josefinslab-light-webfont.svg",
+	"josefinslab-light-webfont.ttf",
+	"josefinslab-light-webfont.woff"
+	), "josefinslab-light-webfont.eot");
+*/
+/* general styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #424251; }
+
+a {
+  color: #424251; }
+  a:hover, a:focus {
+    color: #59596d;
+    text-decoration: none; }
+
+p {
+  text-align: justify; }
+
+h1 {
+  text-align: center; }
+
+.glyphicon,
+.icon {
+  color: #aea08b; }
+
+.section {
+  padding: 90px 0; }
+  .section .heading {
+    font-family: "Josefin Slab Light";
+    color: #bc341b;
+    font-size: 3em;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center; }
+  .section .sub-heading {
+    font-weight: 300;
+    font-size: 1.5em; }
+
+.btn {
+  border: none;
+  color: #b1d5e3; }
+
+.btn-default {
+  background-color: #b1d5e3; }
+  .btn-default:hover, .btn-default:active, .btn-default:focus {
+    background-color: #bcdbe7;
+    color: #b1d5e3; }
+
+.btn-primary,
+.btn-primary[disabled],
+.btn-primary.disabled {
+  background-color: #424251; }
+  .btn-primary:hover, .btn-primary:active, .btn-primary:focus,
+  .btn-primary[disabled]:hover,
+  .btn-primary[disabled]:active,
+  .btn-primary[disabled]:focus,
+  .btn-primary.disabled:hover,
+  .btn-primary.disabled:active,
+  .btn-primary.disabled:focus {
+    background-color: #494959;
+    color: #b1d5e3; }
+
+.btn.loading {
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, rgba(0, 0, 0, 0.1)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(0, 0, 0, 0.1)), color-stop(0.75, rgba(0, 0, 0, 0.1)), color-stop(0.75, transparent), to(transparent));
+  background-image: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
+  background-position: 0 0;
+  background-size: 60px 60px;
+  -moz-background-size: 60px 60px;
+  -webkit-background-size: 60px 60px;
+  -webkit-animation: animate-stripes 2s linear infinite; }
+
+/*.popover {
+	@include single-box-shadow(rgba(0, 0, 0, 0.1), 0, 2px, 4px, 0 );
+}
+*/
+.light-icon {
+  color: #b1d5e3; }
+
+/*------------------------------------------------*/
 /*	Navigation
 /*------------------------------------------------*/
 .main-nav-collapse {
@@ -7264,6 +7357,8 @@ a .icon-flip-vertical:before {
 /*------------------------------------------------*/
 .presentation {
   background-color: white; }
+  .presentation p {
+    text-align: justify; }
 
 .interest {
   margin: 30px 0; }
@@ -7271,20 +7366,6 @@ a .icon-flip-vertical:before {
     margin-bottom: 15px; }
     .interest .sub-heading .glyphicon {
       margin-right: 5px; }
-
-@media (min-width: 768px) {
-  ul.social-icons {
-    position: relative;
-    top: -3px;
-    left: 6px; } }
-ul.social-icons li {
-  padding: 10px; }
-  ul.social-icons li a:hover {
-    text-decoration: none; }
-ul.social-icons .icon {
-  font-size: 22px; }
-  ul.social-icons .icon:hover {
-    color: #7c6d57; }
 
 /*------------------------------------------------*/
 /*	Header
@@ -7297,14 +7378,14 @@ ul.social-icons .icon {
   background-color: white;
   background-size: cover;
   padding-top: 125px;
-  padding-bottom: 500px;
-  text-align: center; }
+  padding-bottom: 500px; }
   @media (min-width: 992px) {
     .jumbotron {
       text-align: center; } }
 
 .header {
   margin-bottom: 0;
+  padding-top: 100px;
   color: #424251; }
   .header .right {
     padding-top: 3em; }
